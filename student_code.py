@@ -25,7 +25,7 @@ class KnowledgeBase(object):
         """
         print("Asserting {!r}".format(fact))
         if fact not in self.facts:
-            if fact.name == "fact":
+            if isinstance(fact,Fact):
                 self.facts.append(fact)
 
         
